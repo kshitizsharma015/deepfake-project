@@ -1,0 +1,136 @@
+/* * This is the CSS file to style your React App.
+* It provides the basic layout and colors described in the guide.
+*/
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+.App {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.App-header {
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #eee;
+}
+
+h1, h2 {
+  color: #444;
+}
+
+/* This is the main container for the Generate and Detect sections */
+.card {
+  background-color: #fff;
+  padding: 25px;
+  margin-top: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  border: 1px solid #ddd;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+input[type="file"] {
+  display: block;
+  font-size: 1em;
+  color: #555;
+}
+
+button {
+  padding: 12px 18px;
+  background-color: #007bff; /* Blue */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+button:disabled {
+  background-color: #aaa; /* Gray when disabled */
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Styles for loading and error messages */
+.loading {
+  text-align: center;
+  padding: 25px;
+  font-style: italic;
+  color: #555;
+  background-color: #fff;
+  border: 1px dashed #ccc;
+  border-radius: 8px;
+  margin-top: 25px;
+}
+
+.error {
+  color: #721c24; /* Dark red */
+  background-color: #f8d7da; /* Light red */
+  border: 1px solid #f5c6cb;
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 25px;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* Styles for the result section */
+.result {
+  margin-top: 25px;
+  text-align: center;
+  background-color: #f8f9fa;
+  border: 1px solid #e0e0e0;
+}
+
+.result video {
+  max-width: 100%;
+  margin-top: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.result a {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 15px;
+  background-color: #28a745; /* Green */
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.result a:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+.ethics-note {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 2px solid #eee;
+  font-size: 0.9em;
+  color: #666;
+  text-align: center;
+}
